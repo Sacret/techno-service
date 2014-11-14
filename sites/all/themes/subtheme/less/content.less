@@ -1,1 +1,27 @@
-// Insert your styling here.
+body.front {
+  .highlighted {
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    @media(min-width: @screen-desktop) {
+      margin-top: -108px;
+      min-height: 400px;
+    }
+    .box-shadow();
+  }
+  .main-container {
+    padding: 0;
+  }
+}
+
+#block-block-1 {
+  .make-sm-column(12);
+  .make-md-column(4);
+  .make-md-column-offset(8);
+  @media(min-width: @screen-desktop) {
+    padding-top: 150px;
+  }
+  .panel {
+    .box-shadow();
+  }
+}
