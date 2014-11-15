@@ -1,9 +1,70 @@
 // Insert your styling here.
 .navbar-header {
-  /*background: url('../images/navheader.png') no-repeat right;
-  background-size: cover;*/
+  @media(min-width: @screen-md) {
+    background: url(../images/navheader.png) no-repeat right;
+    background-size: cover;
+    position: absolute;
+    padding-right: 30px;
+  }
 }
 #navbar {
   .box-shadow();
-   z-index: 999;
+  z-index: 999;
+  /*.container {
+     &:before {
+      background: url(../images/bg_logo_repeat.png) repeat left top;
+      position: relative;
+      bottom: 0;
+      right: 1140px;
+      height: 77px;
+      width: 100%;
+      margin-bottom: -78px;
+    }
+  }*/
+}
+.navbar-nav {
+  @media(min-width: @screen-md) {
+    li {
+      background: url(../images/main_nav_bgr_sep_dark.png) right 5px no-repeat;
+      a {
+        text-shadow: 0px 1px 0px #111;
+      }
+    }
+    li.last {
+      background: none;
+    }
+  }
+  li {
+    border-bottom: 4px solid transparent;
+    font-size: 16px;
+    @media(min-width: @screen-md) {
+      &.active {
+        border-bottom: 4px solid @greenbg;
+      }
+    }
+    &.first {
+      &:before {
+        content: '';
+        background: url(../images/icon_home.png);
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        top: 10px;
+        left: 5px;
+      }
+      a {
+        padding-left: 40px;
+      }
+    }
+  }
+}
+.logo {
+  margin: 7px;
+}
+.navbar-brand {
+  color: @navbar-inverse-brand-color;
+  margin-top: 11px;
+  &:hover {
+    color: @navbar-inverse-brand-hover-color;
+  }
 }

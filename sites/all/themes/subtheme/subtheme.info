@@ -15,6 +15,7 @@ regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
+regions[pre_footer]     = 'Pre Footer'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
@@ -51,6 +52,7 @@ stylesheets[all][] = css/style.css
 ; scripts[] = 'bootstrap/js/scrollspy.js'
 ; scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
+scripts[] = 'js/sticky.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''

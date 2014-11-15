@@ -41,8 +41,8 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic,cyrillic-ext);
+@font-family-sans-serif:  'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -348,7 +348,7 @@
 
 // Basics of a navbar
 @navbar-height:                    50px;
-@navbar-margin-bottom:             0;
+@navbar-margin-bottom:             35px;
 @navbar-border-radius:             0;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
@@ -387,15 +387,15 @@
 // Inverted navbar links
 @navbar-inverse-link-color:                 lighten(@gray-light, 35%);
 @navbar-inverse-link-hover-color:           #fff;
-@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-hover-bg:              rgba(22, 36, 48, 0.15);
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-active-bg:             rgba(22, 36, 48, 0.15);
 @navbar-inverse-link-disabled-color:        #444;
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
-@navbar-inverse-brand-color:                @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-color:                @gray-dark;
+@navbar-inverse-brand-hover-color:          darken(@navbar-inverse-brand-color, 10%);
 @navbar-inverse-brand-hover-bg:             transparent;
 
 // Inverted navbar toggle
@@ -410,7 +410,7 @@
 
 //=== Shared nav styles
 @nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @gray-lighter;
+@nav-link-hover-bg:                         transparent;
 
 @nav-disabled-link-color:                   @gray-light;
 @nav-disabled-link-hover-color:             @gray-light;
@@ -854,3 +854,5 @@
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
+
+@greenbg:                     #44A17C;

@@ -645,7 +645,7 @@ function system_menu() {
 
   foreach (list_themes() as $theme) {
     $items['admin/appearance/settings/' . $theme->name] = array(
-      'title' => $theme->info['name'],
+      'title' => isset($theme->info['name']) ? $theme->info['name'] : 'theme',
       'page arguments' => array('system_theme_settings', $theme->name),
       'type' => MENU_LOCAL_TASK,
       'access callback' => '_system_themes_access',

@@ -35,6 +35,7 @@ function _bootstrap_process_input(&$element, &$form_state) {
     'textfield',
     // Elements module.
     'emailfield',
+    'webform_email',
     'numberfield',
     'rangefield',
     'searchfield',
