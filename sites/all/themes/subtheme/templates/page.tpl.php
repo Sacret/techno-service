@@ -171,9 +171,13 @@
   <div class="container">
     <?php print render($page['pre_footer']); ?>
   </div>
-</footer>
+</div>
 <footer class="footer container-fluid">
   <div class="container">
     <?php print render($page['footer']); ?>
   </div>
 </footer>
+<div class="bottom-page containmer-fluid">
+  <div class="container">&copy; 2014 ООО "Техносервис". Все права защищены
+  </div>
+</div>
