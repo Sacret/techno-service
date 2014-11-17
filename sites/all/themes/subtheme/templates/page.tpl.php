@@ -74,11 +74,16 @@
  */
 ?>
 <div class="main-container container-fluid">
+  <?php if (!empty($page['logo'])): ?>
+    <div class="region-container-logo">
+      <div class="container">
+        <?php print render($page['logo']); ?>
+      </div>
+    </div>
+  <?php endif; ?>
   <?php if (!empty($page['highlighted'])): ?>
     <div class="highlighted jumbotron">
-      <div class="container">
-        <?php print render($page['highlighted']); ?>
-      </div>
+      <?php print render($page['highlighted']); ?>
     </div>
   <?php endif; ?>
   <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">

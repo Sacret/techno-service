@@ -1,11 +1,6 @@
-.highlighted {
-  background-image: url('../images/background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.region-container-logo {
   position: relative;
-  padding: 0;
-  .box-shadow();
+  z-index: 900;
   .container {
     padding: 0;
     @media(min-width: @screen-desktop) {
@@ -22,54 +17,29 @@
     }
   }
 }
-.front {
-    .highlighted {
-    @media(min-width: @screen-desktop) {
-      margin-bottom: -55px;
-      min-height: 555px;
-    }
-  }
-}
-.not-front {
-    .highlighted {
-    @media(min-width: @screen-desktop) {
-      margin-bottom: -55px;
-      min-height: 555px;
-      //min-height: 255px;
-    }
-  }
-}
-.page-node-16 {
-  .highlighted {
-    background-image: url('../images/background5.jpg');
-  }
-}
-.page-management {
-  .highlighted {
-    background-image: url('../images/background2.jpg');
-  }
-}
-.page-node-20 {
-  .highlighted {
-    background-image: url('../images/background4.jpg');
-  }
-}
-.page-analytics {
-  .highlighted {
-    background-image: url('../images/background3.jpg');
-  }
-}
-.page-partners {
-  .highlighted {
-    background-image: url('../images/background1.jpg');
-  }
-}
-.page-node-8 {
-  .highlighted {
-    background-image: url('../images/background6.jpg');
+.highlighted {
+  margin-top: -78px;
+  position: relative;
+  padding: 0 !important;
+  .box-shadow();
+  @media(min-width: @screen-desktop) {
+    margin-bottom: -55px;
+    min-height: 555px;
   }
 }
 
+.carousel .item {
+  max-height: 250px;
+  width: 100%;
+  @media(min-width: @screen-desktop) {
+    max-height: 555px;
+  }
+}
+.carousel .item img {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+}
 
 .main-container {
   padding: 0;
@@ -92,7 +62,7 @@
   margin-bottom: 0;
 }
 
-#node-1, #node-16, #node-20, .view-analytics {
+#node-1, #node-16, #node-20, .view-analytics, .view-news, .node-news {
   p {
     text-indent: 30px;
   }
@@ -149,14 +119,14 @@
   background-size: cover;
   display: table;
   height: 79px;
-  width: 300px;
+  width: 345px;
   a {
     text-decoration: none !important;
   }
-  h2 {
+  h1 {
     background: url(../logo.png) no-repeat left center;
     margin: 0;
-    padding: 20px 0 20px 45px;
+    padding: 15px 0 20px 45px;
     .blue {
       color: @navbar-inverse-bg;
     }
@@ -209,5 +179,11 @@
       border: 10px solid white;
       .box-shadow();
     }
+  }
+}
+
+.node-news {
+  .field-name-field-news-date {
+    margin-top: 10px;
   }
 }
