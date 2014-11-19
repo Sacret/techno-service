@@ -45,7 +45,6 @@
   padding: 0;
   > .container {
     .col-sm-9 {
-      border-right: 1px solid @gray-lighter;
       margin-top: 30px;
     }
     .col-sm-3 {
@@ -53,6 +52,16 @@
     }
     .col-sm-12 {
       margin-top: 30px;
+    }
+  }
+}
+
+.front {
+  .main-container {
+    > .container {
+      .col-sm-9 {
+        border-right: 1px solid @gray-lighter;
+      }
     }
   }
 }
@@ -119,19 +128,16 @@
   background-size: cover;
   display: table;
   height: 79px;
-  width: 345px;
+  width: 365px;
   a {
     text-decoration: none !important;
   }
   h1 {
     background: url(../logo.png) no-repeat left center;
     margin: 0;
-    padding: 15px 0 20px 45px;
-    .blue {
+    padding: 15px 0 20px 65px;
+    a {
       color: @navbar-inverse-bg;
-    }
-    .green {
-      color: @greenbg;
     }
   }
 }
@@ -142,6 +148,16 @@
   .block-title {
     color: white;
     margin-bottom: 30px;
+  }
+  .views-field-title {
+    float: left;
+    margin: 20px 20px 0 0;
+  }
+  .views-field-field-social-projects-image {
+    display: table;
+    img {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -159,6 +175,9 @@
       .box-shadow();
     }
   }
+  .views-field-body {
+    margin-bottom: 20px;
+  }
   .views-field-field-production-photo {
     img {
       border-radius: 5px;
@@ -168,12 +187,13 @@
 }
 
 .view-management {
-  text-align: center;
-  .col-lg-4 {
+  .col-lg-12 {
     padding: 15px 0;
     border-bottom: 1px solid @gray-lighter;
   }
   .views-field-field-management-photo {
+    float: left;
+    margin: 15px;
     img {
       border-radius: 50%;
       border: 10px solid white;
