@@ -71,7 +71,7 @@
   margin-bottom: 0;
 }
 
-#node-1, #node-16, #node-20, .view-analytics, .view-news, .node-news {
+#node-1, #node-16, #node-20, .view-analytics, .view-news, .node-news, #block-block-5, #block-block-6 {
   p {
     text-indent: 30px;
   }
@@ -143,21 +143,23 @@
 }
 
 #block-views-social-projects-block {
+  color: white;
   padding: 30px 0;
-  text-align: center;
   .block-title {
     color: white;
     margin-bottom: 30px;
   }
-  .views-field-title {
-    float: left;
+  .views-field {
     margin: 20px 20px 0 0;
   }
   .views-field-field-social-projects-image {
-    display: table;
+    float: left;
     img {
       margin-right: 10px;
     }
+  }
+  .views-field-body {
+    display: inline;
   }
 }
 
@@ -206,4 +208,8 @@
   .field-name-field-news-date {
     margin-top: 10px;
   }
+}
+
+blockquote p {
+  font-size: @font-size-base;
 }
