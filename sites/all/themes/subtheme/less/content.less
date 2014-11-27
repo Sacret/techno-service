@@ -71,7 +71,7 @@
   margin-bottom: 0;
 }
 
-#node-1, #node-16, #node-20, .view-analytics, .view-news, .node-news, #block-block-5, #block-block-6 {
+#node-1, #node-16, #node-20, .view-analytics, .view-news, .node-news, #block-block-5, #block-block-6, .p, .page-node-29 .node-page, .page-node-30 .node-page{
   p {
     text-indent: 30px;
   }
@@ -212,4 +212,10 @@
 
 blockquote p {
   font-size: @font-size-base;
+}
+
+p {
+  @media(min-width: @screen-sm-min) {
+    margin-left: 0 !important;
+  }
 }
